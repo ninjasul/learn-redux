@@ -12,4 +12,4 @@ function TodoList({ todos, onToggle }) {
     return <div />;
 }
 
-export default TodoList;
+export default React.memo(TodoList);

@@ -32,4 +32,4 @@ function Todos({todos, onCreate, onToggle}) {
     );
 }
 
-export default Todos;
+export default React.memo(Todos);
