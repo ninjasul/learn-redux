@@ -1,9 +1,12 @@
 import React from 'react';
+import TodoItem from "./TodoItem";
 
 function TodoList({ todos, onToggle }) {
     return (
         <ul>
-            <li todos.map
+            {todos.map((todo) => (
+                <TodoItem key={todo.id} todo={todo} onToggle={onToggle} />
+            ))}
         </ul>
     );
     return <div />;
